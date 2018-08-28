@@ -1,0 +1,62 @@
+﻿:root {
+    --body-background-color  : #242323;
+    --circle-shadow-color    : #4ad8a0;
+    --circle-background-color: #051124;
+    --circle-diameter        : 500px;
+    --circle-radius          : calc(var(--circle-diameter) / 2);
+    --circle-margin-left     : calc(50vw - var(--circle-radius) / 2);
+    --cirlce-margin-top      : calc(50vh - var(--circle-radius) / 2);
+    --section-settingsArea-color : darkred;
+}
+
+@font-face {
+    font-family              : "App Font";
+    src                      : url(../fonts/Supermercado_One/SupermercadoOne-Regular.ttf) format("truetype");
+}
+
+html, body {
+    height                   : 100%;
+    width                    : 100%;
+    font-family              : "App Font", sans-serif;
+}
+
+body {
+    margin                   : 0;
+    background-color         : var(--body-background-color);
+}
+
+h1 {
+    position                 : absolute;
+    bottom                   : 0;
+    left                     : 10px;
+    opacity                  : 0.2;
+}
+
+#section-settingsArea {
+    position                 : absolute;
+    height                   : 35px;
+    width                    : fit-content;
+    border                   : 2px dashed var(--section-settingsArea-color);
+}
+
+#div-settingsControls {
+    height                   : 100%;
+    width                    : 100%;
+    opacity                  : 0;
+    transition               : all 1s ease-in-out;   
+}
+
+#div-settingsControls:hover {
+    opacity                  : 0.8;
+}
+
+#section-animationArea {
+    height                   : 100%;
+    width                    : 100%;
+}
+
+.circle {
+    box-sizing               : border-box;
+    position                 : absolute;
+    border-radius            : 50%;
+}
