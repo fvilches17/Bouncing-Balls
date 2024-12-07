@@ -1,2 +1,2 @@
 # Bouncing-Balls
-Single web page that shows balls bouncing around.
+I was bored. Single web page that shows balls bouncing around.
